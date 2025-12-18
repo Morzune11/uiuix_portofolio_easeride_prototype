@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Portfolio | EaseRide Prototipe</title>
+    <link rel="icon" type="image/png" href="images/logo tok.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="images/Logo.png" alt=""></a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#empathize">Empathize</a></li>
+                <li><a href="#define">Define</a></li>
+                <li><a href="#ideate">Ideate</a></li>
+                <li><a href="#prototype">Prototype</a></li>
+                <li><a href="#test">Test</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="container hero-content">
+            <span class="badge">UI/UX Case Study</span>
+            <h1>Redesain Aplikasi <span style="color: #01af29;">Gojek</span><br><span class="highlight">EaseRide</span></h1>
+            <p class="hero-subtitle">Sebuah studi kasus mendalam menggunakan metode Design Thinking untuk memecahkan masalah pengguna nyata.</p>
+            <a href="#overview" class="btn btn-primary">Lihat Proses <i class="fas fa-arrow-down"></i></a>
+        </div>
+        <div class="hero-background-elements">
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">00. Overview</h2>
+            <div class="overview-grid">
+                <div class="card overview-card">
+                    <h3><i class="fas fa-bullseye"></i> Goal</h3>
+                    <p>Meningkatkan pengalaman pengguna dalam menggunakan aplikasi dengan antarmuka yang lebih intuitif dan modern.</p>
+                </div>
+                <div class="card overview-card">
+                    <h3><i class="fas fa-user-tag"></i> My Role</h3>
+                    <p>UI/UX Designer, Researcher, Prototyper</p>
+                </div>
+                <div class="card overview-card">
+                    <h3><i class="fas fa-clock"></i> Timeline</h3>
+                    <p>16 Minggu (1 Semester)</p>
+                </div>
+                <div class="card overview-card">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <div class="tools-icons">
+                        <i class="fab fa-figma" title="Figma"></i>
+                        <i class="fab fa-google" title="Google Forms"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empathize Section -->
+    <section id="empathize" class="section">
+        <div class="container">
+            <h2 class="section-title">01. Empathize</h2>
+            <p class="section-desc">Mengumpulkan data dari pengguna untuk memahami kebutuhan dan masalah mereka.</p>
+            
+            <div class="empathize-content">
+                <!-- Personas -->
+                <div class="subsection">
+                    <h3>User Persona</h3>
+                    
+                    <div class="persona-card card">
+                        <div class="persona-header">
+                            <div class="avatar-placeholder"><img src="images/User 1.png" alt="user`"></div>
+                            <div>
+                                <h4>Mohammad Rahman (Mahasiswa)</h4>
+                                <p class="job">19 Tahun </p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <div class="persona-col">
+                                <h5>Goals</h5>
+                                <ul>
+                                    <li>Menghemat waktu ketika tidak memiliki kendaraan pribadi.</li>
+                                    <li>Memesan makanan dengan mudah tanpa perlu keluar rumah.</li>
+                                    <li>Menggunakan aplikasi transportasi dengan antarmuka yang sederhana dan cepat dipahami.</li>
+                                    <li>Menghindari kerumitan dalam proses transaksi dan pemesanan.</li>
+                                </ul>
+                            </div>
+                            <div class="persona-col">
+                                <h5>Frustrations</h5>
+                                <ul>
+                                    <li>Beberapa fitur terasa kurang relevan seperti GoMassage atau GoClean.</li>
+                                    <li>Menu navigasi tersembunyisulit ditemukan</li>
+                                    <li>Keterbatasan saldo GoPay yang bisa menghambat transaksi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-card card" style="margin-top: 25px;">
+                        <div class="persona-header">
+                            <div class="avatar-placeholder"><img src="images/User 2.png" alt="user"></div>
+                            <div>
+                                <h4>Lasmini (Ibu Rumah Tangga)</h4>
+                                <p class="job">56 Tahun </p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <div class="persona-col">
+                                <h5>Goals</h5>
+                                <ul>
+                                    <li>Menggunakan aplikasi transportasi yang sederhana, mudah dipahami, dan memiliki tampilan besar.</li>
+                                    <li>Dapat memesan kendaraan dengan cepat saat kondisi darurat tanpa bantuan orang lain.</li>
+                                </ul>
+                            </div>
+                            <div class="persona-col">
+                                <h5>Frustrations</h5>
+                                <ul>
+                                    <li>Tampilan aplikasi terlalu ramai dan membingungkan.</li>
+                                    <li>Tulisan serta ikon kecil sehingga sulit dibaca.</li>
+                                    <li>Terlalu banyak layanan yang tidak relevan untuknya (GoMassage, GoSend, dll).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="persona-card card" style="margin-top: 25px;">
+                        <div class="persona-header">
+                            <div class="avatar-placeholder"><img src="images/User 3.png" alt="user"></div>
+                            <div>
+                                <h4>Moch Arrafi Kusuma (Pelajar)</h4>
+                                <p class="job">15 Tahun </p>
+                            </div>
+                        </div>
+                        <div class="persona-body">
+                            <div class="persona-col">
+                                <h5>Goals</h5>
+                                <ul>
+                                    <li>Dapat bepergian dengan aman dan nyaman tanpa bergantung pada orang tua.</li>
+                                    <li>Menggunakan transportasi yang praktis dan terjangkau bagi pelajar.</li>
+                                </ul>
+                            </div>
+                            <div class="persona-col">
+                                <h5>Frustrations</h5>
+                                <ul>
+                                    <li>Jalan rusak atau macet.</li>
+                                    <li>Keterbatasan transportasi umum yang nyaman untuk pelajar.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pain Points (Insights) -->
+                <div class="subsection">
+                    <h3>Insight Wawancara (Pain Points)</h3>
+                    <div class="insights-grid">
+                        <div class="insight-card dislike">
+                            <div class="insight-icon"><i class="fas fa-thumbs-down"></i></div>
+                            <h4>Dislike</h4>
+                            <p>"Terlalu banyak layanan yang tidak relevan"</p>
+                        </div>
+                        <div class="insight-card confusion">
+                            <div class="insight-icon"><i class="fas fa-question"></i></div>
+                            <h4>Confusion</h4>
+                            <p>"Tampilan aplikasi terlalu ramai dan membingungkan."</p>
+                        </div>
+                        <div class="insight-card expect">
+                            <div class="insight-icon"><i class="fas fa-star"></i></div>
+                            <h4>Expectation</h4>
+                            <p>"Berharap icon yang lebih jelas dan font yang lebih besar."</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- User Journey Placeholder -->
+                 <div class="subsection">
+                    <h3>User Journey Map</h3>
+                    <div class="image-placeholder">
+                      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/kBFUvyMjcMTHTFvnuGeFnX/UI-UX-Kelompok-5?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Define Section -->
+    <section id="define" class="section">
+        <div class="container">
+            <h2 class="section-title">02. Define</h2>
+            <p class="section-desc">Mendefinisikan masalah utama berdasarkan hasil Empathize.</p>
+
+            <div class="define-grid">`
+                <div class="card problem-statement">
+                    <h3>Problem Statement</h3>
+                    <p>Pengguna <strong>kesulitan menemukan fitur yang diinginkan</strong> karena <strong>pilihan menu yang terlalu banyak</strong>. Hal ini menyebabkan mereka <strong>kesulitan</strong>.</p>
+                </div>
+
+                <div class="card hmw">
+                    <h3>How Might We (HMW)</h3>
+                    <ul>
+                        <li>How might we menyederhanakan tampilan aplikasi agar tidak terasa padat dan mempermudah bagi pengguna?</li>
+                        <li>HMW meningkatkan keterbacaan informasi penting agar tetap jelas di berbagai ukuran layar</li>
+                        <li>How Might We menyederhanakan proses pemilihan fitur dengan ikon atau label yang mudah dipahami?</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="subsection">
+                <h3>Priority Matrix</h3>
+                <div class="matrix-placeholder card">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/kBFUvyMjcMTHTFvnuGeFnX/UI-UX-Kelompok-5?node-id=351-1456&embed-host=share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideate Section -->
+    <section id="ideate" class="section">
+        <div class="container">
+            <h2 class="section-title">03. Ideate</h2>
+            <p class="section-desc">Mengembangkan solusi kreatif melalui brainstorming dan sketsa.</p>
+
+            <div class="subsection">
+                <h3>Crazy 8's & Sketches</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><div class="img-box"><img src="images/sketch1.png" alt="sketch"></div></div>
+                    <div class="gallery-item"><div class="img-box"><img src="images/sketch2.png" alt="sketch"></div></div>
+                    <div class="gallery-item"><div class="img-box"><img src="images/sketch3.png" alt="sketch"></div></div>
+                    <div class="gallery-item"><div class="img-box"><img src="images/sketch4.png" alt="sketch"></div></div>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>User Flow</h3>
+                <div class="flow-container card">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Dn05bM67EGqBud8tDxCSfN/244311047_Moch.-Arrizal-SP_UI-UX?node-id=1011-718&embed-host=share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section id="prototype" class="section">
+        <div class="container">
+            <h2 class="section-title">04. Prototype</h2>
+            <p class="section-desc">Implementasi desain High-Fidelity yang interaktif.</p>
+
+            <div class="prototype-showcase">
+                <!-- Replace src with actual design images later -->
+                <div class="phone-mockup">
+                    <div class="screen-content"><img src="images/Login.png" alt=""></div>
+                </div>
+                <div class="phone-mockup">
+                    <div class="screen-content"><img src="images/Home (1).png" alt=""></div>
+                </div>
+                <div class="phone-mockup">
+                    <div class="screen-content"><img src="images/food (1).png" alt=""></div>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="https://www.figma.com/proto/Dn05bM67EGqBud8tDxCSfN/244311047_Moch.-Arrizal-SP_UI-UX?node-id=1095-808&t=KxnsBu8XwPHguXwp-1&scaling=scale-down&content-scaling=fixed&page-id=1095%3A805&starting-point-node-id=1095%3A808" class="btn btn-primary btn-lg" target="_blank"><i class="fab fa-figma"></i> Coba Prototype di Figma</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Test Section -->
+    <section id="test" class="section">
+        <div class="container">
+            <h2 class="section-title">05. Test</h2>
+            <p class="section-desc">Validasi desain dengan pengguna asli.</p>
+
+            <div class="narasumber-profile">
+                <img src="images/narasumber.png" alt="Narasumber" class="narasumber-avatar">
+                <div class="narasumber-info">
+                    <h3>Achmad Chotibul Umam</h3>
+                    <p>Karyawan Toko</p>
+                    <p style="margin-top: 10px; font-style: italic;">"Prototipe desain minimalis namun masih bisa dipahami dengan baik oleh pengguna."</p>
+                </div>
+            </div>
+
+            <div class="test-results-grid" style="margin-top: 25px;">
+                <div class="card">
+                    <h3>Metode Testing</h3>
+                    <p>Qualitative Usability Testing (Moderated)</p>
+                    <p><strong>Task:</strong></p>
+                    <ul>
+                        <li>"Coba lakukan proses registrasi dan login"</li>
+                        <li>"Apakah anda mengenali menu di home dengan baik dari icon dan teksnya?"</li>
+                        <li>"Coba lakukan proses pemesanan makanan"</li>
+                </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Hasil Feedback</h3>
+                    <ul class="feedback-list">
+                        <li class="success"><i class="fas fa-check-circle"></i> User berhasil menyelesaikan task registrasi dan login dengan baik.</li>
+                        <li class="success"><i class="fas fa-check-circle"></i> User dapat mengenali menu di home dengan baik dari icon dan teksnya.</li>
+                        <li class="issue"><i class="fas fa-exclamation-triangle"></i> User sempat bingung untuk menemukan menu profil di home.</li>
+                        <li class="success"><i class="fas fa-check-circle"></i> User dapat menyelesaikan task pemesanan makanan dengan baik.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <h3>Rekomendasi Perbaikan</h3>
+                <div class="card recommendation-card">
+                    <div class="rec-item">
+                        <p>Menukar posisi metode pembayaran dan total harga pada halaman pembayaran.</p>
+                    </div>
+                    <div class="rec-item">
+                        <p>Menambahkan halaman menampilkan profil pengguna secara singkat ketika user image di tekan.</p>
+                    </div>
+                    <div class="rec-item">
+                        <p>Menambahkan halaman tunggu pesanan setelah pembayaran dan sebelum ratingx.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection">
+                <h3>Hasil Perbaikan</h3>
+                <div class="flow-container card">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Dn05bM67EGqBud8tDxCSfN/244311047_Moch.-Arrizal-SP_UI-UX?node-id=1229-1082&embed-host=share" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Creator Section -->
+    <section id="creator" class="creator-section">
+        <div class="container creator-content">
+            <h2 class="section-title">Meet the Creator</h2>
+            <p class="section-desc">Sosok dibalik redesain aplikasi ini.</p>
+            
+            <div class="creator-card">
+                <div class="creator-bg-decoration"></div>
+                <div class="creator-avatar-container">
+                    <div class="creator-avatar">
+                        <img src="images/pembuat.png" alt="">
+                    </div>
+                </div>
+                <h3 class="creator-name">Moch. Arrizal Syach Putra</h3>
+                <p class="creator-role">Mahasiswa</p>
+                <p class="creator-bio">
+                    "Hanya seorang yang lebih tertarik berada di dapur daripada pelayanan tapi ini bukan soal restoran."
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Morzune11" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 UI/UX Portfolio. Dibuat dengan <i class="fas fa-heart" style="color: var(--primary-color);"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
