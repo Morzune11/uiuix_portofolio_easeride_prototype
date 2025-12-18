@@ -115,6 +115,11 @@ ul {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.section:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+
 .card {
     background-color: var(--card-bg);
     border: 1px solid rgba(226, 232, 240, 0.8);
@@ -543,8 +548,9 @@ ul {
 /* Ideate */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    justify-content: center;
 }
 
 .img-box img {
@@ -597,6 +603,32 @@ ul {
     color: var(--text-secondary);
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+.ui-kit-box {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: var(--shadow-sm);
+    padding: 12px;
+    aspect-ratio: 9/16;
+    /* Taller for mobile UI */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.ui-kit-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ui-kit-box:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-xl);
+    transform: translateY(-8px);
 }
 
 /* Prototype */
